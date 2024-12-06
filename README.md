@@ -3,17 +3,17 @@
 
 ## Useage
 
+```php
+composer require jemer/session
+```
 
+
+Start a new session by calling the ``` SessionManager::Instance()->Start ``` method. Pass in any session properties that you would want.  
 
 ```php
 
 use Jemer\Session\SessionManager;
 
-```
-
-Start a new session by calling the ``` SessionManager::Instance()->Start ``` method. Pass in any session properties that you would want.  
-
-```php
 SessionManager::Instance()->Start([
                     "username" => "Bob",
                     "role" => "manager",
